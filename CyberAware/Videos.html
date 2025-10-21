@@ -42,6 +42,30 @@
             background: #f6f8fb;
             font-family: "Poppins", sans-serif;
         }
+         .back-button {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: #191d52;
+    font-weight: 700;
+    font-size: 1.1rem;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 10px var(--shadow-light);
+}
+
+.back-button:hover {
+    background-color: var(--accent-color);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px var(--shadow-light);
+}
+
+.back-button i {
+    margin-right: 8px;
+    font-size: 1.2rem;
+}
     </style>
 </head>
 
@@ -52,20 +76,9 @@
         <div class="logo">
             <h2>CyberAware</h2>
         </div>
-        <nav>
-            <ul>
-                <li><a href="dashboard.html">Dashboard</a></li>
-                <li><a href="checklist.html">Checklist</a></li>
-                <li><a href="learning.html">Learning</a></li>
-                <li><a href="quiz.html">Quizzes</a></li>
-                <li><a href="ctf.html">CTF</a></li>
-                <li><a href="leaderboard.html">Leaderboard</a></li>
-                <li><a href="stats.html">My Stats</a></li>
-                <li><a href="tips.html">Tips</a></li>
-                <li><a href="news.html">News</a></li>
-                <li class="active"><a href="videos.html">Videos</a></li>
-            </ul>
-        </nav>
+         <a href="index.html" class="back-button">
+    <i class="fas fa-arrow-left"></i> Back
+</a>
     </aside>
 
     <!-- Main Content -->
@@ -147,5 +160,6 @@
         </div>
     </main>
 </body>
+
 
 </html>
